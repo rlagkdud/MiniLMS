@@ -73,6 +73,7 @@ public class MemberServiceImpl implements MemberService {
                 + "<div><a target='_blank' href='http://localhost:8080/member/email-auth?id=" + uuid + "'> 가입 완료 </a></div>";
         mailComponents.sendMail(email, subject, text);
         
+
         return true;
     }
     

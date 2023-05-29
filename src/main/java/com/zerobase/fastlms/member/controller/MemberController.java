@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.security.Principal;
 import java.util.List;
 
@@ -29,7 +30,7 @@ public class MemberController {
     
     @RequestMapping("/member/login")
     public String login() {
-        
+
         return "member/login";
     }
     
